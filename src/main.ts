@@ -1,15 +1,9 @@
 import "./style.css";
+import { Idata } from "./interfaces";
 import { data } from "./mock-data";
 
-interface Idata {
-   width: number;
-   height: number;
-   name: string;
-   id: string;
-}
-
-function sortObjects(array: any): Idata[] {
-   const sortedArray: Idata[] = array.sort((prev: Idata, next: Idata): number => {
+function sortObjects(myArray: Array<Idata>): Idata[] {
+   const sortedArray: Idata[] = myArray.sort((prev: Idata, next: Idata): number => {
       return next.width - prev.width;
    });
    return sortedArray;

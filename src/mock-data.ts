@@ -1,4 +1,6 @@
-export const data: object[] = [
+import { Idata } from "./interfaces";
+
+export const data: Array<Idata> = [
    {
       width: 43,
       height: 29,
